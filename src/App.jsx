@@ -15,6 +15,7 @@ import {
 import Home from "./Components/Home.jsx";
 import ProductForm from './Components/ProductForm.jsx';
 import UserList from './Components/UserList.jsx';
+import ApiCrud from './Components/ApiCrud.jsx';
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -23,6 +24,7 @@ const NavbarComponent = () => {
     { name: "inicio", url: "/" },
     { name: "añadir productos", url: "/ProductForm"},
     {name: "lista de usuarios", url: "/UserList"},
+    { name: "api-crud-rest", url: "/ApiCrud" },
   ];
 
   return (
@@ -89,6 +91,7 @@ export default function App() {
     <Route path="/" element={<Home />} />
     <Route path="/ProductForm" element={<ProductForm /> }/>
     <Route path='/UserList' element={<UserList /> }/>
+    <Route path="/ApiCrud" element={<ApiCrud />} />
     </Routes>
     </Router>
     </div>

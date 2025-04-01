@@ -62,6 +62,13 @@ function Home() {
         </Button>
       </Link>
 
+      {/* Botón para navegar a API CRUD */}
+      <Link to="/ApiCrud">
+        <Button color="secondary" variant="shadow" className="mb-4">
+          🛠️ API CRUD
+        </Button>
+      </Link>
+
       {/* Tabla de productos */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
